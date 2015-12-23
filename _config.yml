@@ -1,2 +1,40 @@
-encoding: utf-8
+# Site settings
+title: Cheney Dong 
+email: cheneydc@gmail.com
+description: > # this means to ignore newlines until "baseurl:"
+    脑子不好使了，还是记下来的好
+baseurl: "" # the subpath of your site, e.g. /blog/
+#url: "http://cheneydc.github.io/blog/" # the base hostname & protocol for your site
+url: "http://cheneydc.xyz"
 
+# Sidebar filter
+# Choose 'tag' or 'category' as filter in sidebar.
+filter: 'tag'
+
+
+# Social account
+# twitter:  username
+# weibo:    ID
+github:   cheneydc 
+# codepen:  username
+# dribbble: username
+
+
+# Comment
+disqus_shortname: cheneydc 
+
+
+# Google Analytics
+# google_analytics: tracking_ID
+
+
+# Build settings
+# markdown: kramdown
+markdown: redcarpet
+redcarpet:
+        extensions: [ "fenced_code_blocks", "hard_wrap","autolink", "tables", "strikethrough", "superscript", "with_toc_data", "highlight", "prettify","no_intra_emphasis"]
+highlight: pygments
+sass:
+  style: compressed
+gems:
+  - jekyll-sitemap
